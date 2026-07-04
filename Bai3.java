@@ -21,5 +21,6 @@ public class Bai3
         for (int x : b)
             System.out.print(x + " ");
     }
+    System.out.print("Hello World");
 }
 
