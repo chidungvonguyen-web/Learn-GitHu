@@ -20,7 +20,7 @@ public class Bai3
 
         for (int x : b)
             System.out.println(x + " ");
+        System.out.println("Hello World");
     }
-    System.out.println("Hello World");
 }
 
