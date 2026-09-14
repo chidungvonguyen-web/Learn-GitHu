@@ -1,4 +1,4 @@
-name: Run Java
+name: Run Java Programs
 
 on:
   push:
@@ -11,17 +11,38 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
+      # 1. Download source code
       - name: Checkout code
         uses: actions/checkout@v4
 
+      # 2. Install Java
       - name: Setup Java
         uses: actions/setup-java@v5
         with:
           java-version: '17'
           distribution: 'temurin'
 
+      # 3. Compile all Java files
       - name: Compile Java
-        run: javac Bai3.java
+        run: |
+          javac Bai1.java
+          javac Bai2.java
+          javac Bai3.java
 
-      - name: Run Java
-        run: java Bai3
+      # 4. Run Bai1
+      - name: Run Bai1
+        run: |
+          echo "========== Bai1 =========="
+          java Bai1
+
+      # 5. Run Bai2
+      - name: Run Bai2
+        run: |
+          echo "========== Bai2 =========="
+          java Bai2
+
+      # 6. Run Bai3
+      - name: Run Bai3
+        run: |
+          echo "========== Bai3 =========="
+          java Bai3
