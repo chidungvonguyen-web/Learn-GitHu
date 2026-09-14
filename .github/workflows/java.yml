@@ -15,10 +15,13 @@ jobs:
         uses: actions/checkout@v4
 
       - name: Setup Java
-        uses: actions/setup-java@v4
+        uses: actions/setup-java@v5
         with:
           java-version: '17'
           distribution: 'temurin'
 
       - name: Compile Java
-        run: javac Bai1.java Bai2.java Bai3.java
+        run: javac Bai3.java
+
+      - name: Run Java
+        run: java Bai3
