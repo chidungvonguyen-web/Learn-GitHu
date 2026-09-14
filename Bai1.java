@@ -20,7 +20,7 @@ public class Bai1
     public static void main(String[] args)
     {
         Scanner sc = new Scanner(System.in);
-        System.out.print("Nhap so phan tu mang: ");
+        System.out.println("Nhap so phan tu mang: ");
         int n = sc.nextInt();
         int[] arr = new int[n];
         for(int i =0; i<n; i++)
