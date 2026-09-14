@@ -19,7 +19,7 @@ public class Bai3
         int[] b = processArray(a);
 
         for (int x : b)
-            System.out.print(x + " ");
+            System.out.println(x + " ");
     }
     System.out.println("Hello World");
 }
